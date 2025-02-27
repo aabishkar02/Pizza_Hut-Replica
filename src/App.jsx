@@ -11,14 +11,29 @@ import Banner from "./Banner"
 import Footer from "./Footer"
 
 export default function App() {
-  
+  const val = [
+    {url: "public/fTag.jpg", desc: "Constant COnstanasda asd asd as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"}
+  ];
+   
+  const popularPizzas = [
+    {url: "public/fTag.jpg", desc: "Constant COnstanasda asd asd as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"}
+  ];
+    
   return <>
 
     <Navbar />
     <StickyHeader />
     <Board path = "/board.webp"/>
     <StartHere />
-    <Featured path = "/fTag.jpg"/>
+    <Featured path = {val}/>
     <PopularMenu />
     <Banner />
     <Footer />
