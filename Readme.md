@@ -20,8 +20,8 @@ Follow these steps to set up and run the project locally:
 
 1. **Clone the repository**  
    ```bash
-   git clone <your-repository-url>
-   cd pizza-hut-clone
+   git clone https://github.com/aabishkar02/Pizza_Hut-Replica.git
+   cd Pizza_Hut-Replica
    ```
 
 2. **Install dependencies**  
