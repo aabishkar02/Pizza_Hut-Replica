@@ -1,9 +1,11 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import "./styles.css"
 import Button from "./Button"
 import Rewards from "./Rewards"
+import  {ValueContext} from "./ValueContext"
 
 export default function Navbar() {
+    const {value} = useContext(ValueContext)
     return <>
         <div className="navMain">
             <div className="navbar">
@@ -16,7 +18,7 @@ export default function Navbar() {
                 </div>
                 <div className="right">
                     <Rewards text="Hut Rewards" />
-                    <Button text= "$0.00"/>
+                    <Button text= {value}/>
                 </div>
             </div>
         </div>

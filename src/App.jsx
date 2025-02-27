@@ -8,11 +8,12 @@ import StartHere from "./StartHere"
 import Featured from "./Featured"
 import PopularMenu from "./PopularMenu"
 import Banner from "./Banner"
+import { ValueProvider } from "./ValueContext"
 import Footer from "./Footer"
 
 export default function App() {
   const val = [
-    {url: "public/fTag.jpg", desc: "Constant COnstanasda asd asd as"},
+    {url: "fTag.jpg", desc: "Constant COnstanasda asd asd as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
@@ -20,8 +21,7 @@ export default function App() {
   ];
    
   const popularPizzas = [
-    {url: "public/fTag.jpg", desc: "Constant COnstanasda asd asd as"},
-    {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
+    {url: "/fTag.jpg", desc: "Constant COnstanasda asd asd as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"},
     {url: "/fTag.jpg", desc: "Constant COnstanasddas as"}
@@ -29,15 +29,16 @@ export default function App() {
     
   return <>
 
-    <Navbar />
-    <StickyHeader />
-    <Board path = "/board.webp"/>
-    <StartHere />
-    <Featured path = {val}/>
-    <PopularMenu />
-    <Banner />
-    <Footer />
-
+    <ValueProvider>
+      <Navbar />
+      <StickyHeader />
+      <Board path = "/board.webp"/>
+      <StartHere />
+      <Featured path = {val}/>
+      <PopularMenu details = {popularPizzas}/>
+      <Banner />
+      <Footer />
+    </ValueProvider>
 
   </>
   

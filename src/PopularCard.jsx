@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./secondStyles.css"
 
 
-export default function PopularCard() {
+export default function PopularCard(props) {
     return <>
         <div className="popularCard">
             <div className="popularCardDetails">
@@ -12,14 +12,10 @@ export default function PopularCard() {
                     </div>
                     <div className="ppTextDiv">
 
-                            Supreme Pizza
-
-                            Large, Hand Tossed Pizza
-
-                            $18.99
+                            <p></p>
                     </div>
                     <div>
-                            k
+                            
                     </div>
                 </div>
                 <div className="getStartedDiv">
@@ -31,7 +27,7 @@ export default function PopularCard() {
             </div>
 
             <div className="popularDescription">
-                <h5 id="pDescription">420 cal/slice, 8 slices</h5>
+                <h5 id="pDescription">{props.detail.desc}</h5>
             </div>       
             
         </div>

@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./secondStyles.css"
 import PopularCard from "./PopularCard"
 
-export default function PopularMenu({path}) {
+export default function PopularMenu(props) {
     return <>
         <div className="popularMenuDiv">
             <div className="popularMenu">
@@ -10,14 +10,10 @@ export default function PopularMenu({path}) {
                     <h1 className="pPizzasTitle">Popular Pizzas</h1>
                 </div>
                 <div className="pPizzasMenu">
-                    <PopularCard />
-                    <PopularCard />
-
-                    <PopularCard />
-
-                    <PopularCard />
-
-                    <PopularCard />
+                    {props.details.map((card) => (
+                        <PopularCard detail = {card}/>
+                    ))}
+                    
                 </div>
             </div>
         </div>
