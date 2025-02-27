@@ -1,0 +1,4 @@
+# REACT BASED CLONE WEBSITE FOR PIZZAHUT    
+
+##HOW TO RUN:
+### npm run dev
