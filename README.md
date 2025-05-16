@@ -133,4 +133,4 @@ Note: Authentication features are still being implemented.
 Feel free to fork the project and submit pull requests.
 
 ## License
-This project is intended for learning purposes only and is not affiliated with Pizza Hut. 
+This project is intended for learning purposes only.
